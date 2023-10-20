@@ -18,7 +18,11 @@ export class CardComponent implements OnInit {
   produtos: string[] = []
   ngOnInit(): void { }
 
-  adicionar(){
+  adicionar() {
     this.produtos.push("algoDinamicoAqui")
+  }
+
+  remover(index: number) {
+    this.produtos.splice(index,1)
   }
 }
