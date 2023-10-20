@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css'],
 })
 export class CardComponent implements OnInit {
+  produtos: string[] = []
+  menuType:string = "diretor"
+
   constructor() {
     this.produtos = [
       "mouse",
@@ -15,7 +18,6 @@ export class CardComponent implements OnInit {
     ]
   }
 
-  produtos: string[] = []
   ngOnInit(): void { }
 
   adicionar() {
@@ -23,6 +25,6 @@ export class CardComponent implements OnInit {
   }
 
   remover(index: number) {
-    this.produtos.splice(index,1)
+    this.produtos.splice(index, 1)
   }
 }
