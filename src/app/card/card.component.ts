@@ -17,4 +17,8 @@ export class CardComponent implements OnInit {
 
   produtos: string[] = []
   ngOnInit(): void { }
+
+  adicionar(){
+    this.produtos.push("algoDinamicoAqui")
+  }
 }
